@@ -1,0 +1,16 @@
+require 'opal'
+require 'opal/httpget'
+
+desc "Build our app to test.js"
+
+# .js作成には bundler exec rake build とする
+# 古いファイルは消しておく必要あるかも
+
+task :build do
+  ## Opalのrubyファイルがあるフォルダを指定する
+  Opal.append_path "."
+  Opal.append_path "../../../lib"
+
+  ## binwriteの第一引数に出来上がりjsを保存するフォルダを指定する
+  File.binwrite "test.js", Opal::Builder.build("test").to_s
+end

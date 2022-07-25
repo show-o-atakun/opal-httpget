@@ -1,0 +1,30 @@
+PATH
+  remote: ../../..
+  specs:
+    opal-httpget (0.1.0)
+      opal
+      opal-jquery
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.2)
+    opal (1.5.1)
+      ast (>= 2.3.0)
+      parser (~> 3.0, >= 3.0.3.2)
+    opal-jquery (0.4.6)
+      opal (>= 0.10.0, < 2.0)
+    parser (3.1.2.0)
+      ast (~> 2.4.1)
+    rake (13.0.6)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  opal
+  opal-httpget!
+  rake
+
+BUNDLED WITH
+   2.2.3

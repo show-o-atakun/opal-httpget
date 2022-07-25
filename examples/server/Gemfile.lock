@@ -1,0 +1,41 @@
+PATH
+  remote: ../..
+  specs:
+    opal-httpget (0.1.0)
+      opal
+      opal-jquery
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.2)
+    concurrent-ruby (1.1.10)
+    opal (1.5.1)
+      ast (>= 2.3.0)
+      parser (~> 3.0, >= 3.0.3.2)
+    opal-jquery (0.4.6)
+      opal (>= 0.10.0, < 2.0)
+    opal-sprockets (1.0.3)
+      opal (>= 1.0, < 2.0)
+      sprockets (~> 4.0)
+      tilt (>= 1.4)
+    parser (3.1.2.0)
+      ast (~> 2.4.1)
+    rack (2.2.4)
+    sprockets (4.1.1)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
+    tilt (2.0.11)
+    webrick (1.7.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  opal-httpget!
+  opal-sprockets
+  rack
+  webrick
+
+BUNDLED WITH
+   2.2.3

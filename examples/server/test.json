@@ -1,0 +1,110 @@
+{
+    "BackGround":
+    [
+      [ 0,  5, "map_objects_night/teru_map_bg-night.png"],
+      [ 6, 18, "map_objects/teru-map_bg.png"],
+      [19, 24, "map_objects_night/teru_map_bg-night.png"]
+    ],
+  
+    "BackGround-Start":
+    [
+      [ 0,  5, "map_objects_night/teru_map_bg_start-night.png"],
+      [ 6, 18, "map_objects/teru-map_bg_start.png"],
+      [19, 24, "map_objects_night/teru_map_bg_start-night.png"]
+    ],
+  
+    "Restaurant":
+    {
+      "Area": [89, 198, 406, 386],
+      "Comment": "町一番のファミレスよ。ドリンクバーの充実ぶりが大変よきことよ。",
+      "Clicked_Back_Image": [
+        [ 0,  5, "map_objects_night/dining-night.png"],
+        [ 6, 18, "map_objects/teru-map-nanairo_dining.png"],
+        [19, 24, "map_objects_night/dining-night.png"]
+      ],
+      "Fade_In_Image": [
+        [ 0,  5,  "night.jpg"],
+        [ 6, 18,  "noon.jpg"],
+        [19, 24,  "night.jpg"]
+      ]
+    },
+  
+    "Oshama-House":
+    {
+      "Area": [55, 399, 293, 620],
+      "Comment": "レディ御用達のブティックなの。最近リニューアルして話題よ！",
+      "Clicked_Back_Image": [
+        [ 0,  5, "map_objects_night/oshama-night.png"],
+        [ 6, 18, "map_objects/teru-map-oshama_house.png"],
+        [19, 24, "map_objects_night/oshama-night.png"]
+      ],
+      "Fade_In_Image": [
+        [ 0,  5,  "night.jpg"],
+        [ 6, 18,  "noon.jpg"],
+        [19, 24,  "night.jpg"]
+      ]
+    },
+  
+    "Teechan-No-Ie":
+    {
+      "Area": [524, 211, 715, 389],
+      "Comment": "レディの住まいへようこそ！何をくれるのかしら？",
+      "Clicked_Back_Image": [
+        [ 0,  5, "map_objects_night/house-night.png"],
+        [ 6, 18, "map_objects/teru-map-teechan_no_ie.png"],
+        [19, 24, "map_objects_night/house-night.png"]
+      ],
+      "Fade_In_Image": [
+        [ 0,  5,  "night.jpg"],
+        [ 6, 18,  "noon.jpg"],
+        [19, 24,  "night.jpg"]
+      ]
+    },
+  
+    "BC-Station":
+    {
+      "Area": [395, 350, 633, 602],
+      "Comment": "てゑの日常を配信しちゃうことよ",
+      "Clicked_Back_Image": [
+        [ 0,  5, "map_objects_night/twitter-night.png"],
+        [ 6, 18, "map_objects/teru-map-bc_station.png"],
+        [19, 24, "map_objects_night/twitter-night.png"]
+      ],
+      "Fade_In_Image": [
+        [ 0,  5,  "night.jpg"],
+        [ 6, 18,  "noon.jpg"],
+        [19, 24,  "night.jpg"]
+      ]
+    },
+  
+    "Grass-Field":
+    {
+      "Area": [395, 350, 633, 602],
+      "Comment": "みんなの集まる原っぱよ。パーティーもできるわよ",
+      "Clicked_Back_Image": [
+        [ 0,  5, "map_objects_night/harappa-night.png"],
+        [ 6, 18, "map_objects/teru-map-grass_field.png"],
+        [19, 24, "map_objects_night/harappa-night.png"]
+      ],
+      "Fade_In_Image": [
+        [ 0,  5,  "night.jpg"],
+        [ 6, 18,  "noon.jpg"],
+        [19, 24,  "night.jpg"]
+      ]
+    },
+  
+    "Other":
+    {
+      "Area": [0, 0, 2000, 5000],
+      "Comment": "",
+      "Clicked_Back_Image": [
+        [ 0,  5, "map_objects_night/teru_map_bg-night.png"],
+        [ 6, 18, "map_objects/teru-map_bg.png"],
+        [19, 24, "map_objects_night/teru_map_bg-night.png"]
+      ],
+      "Fade_In_Image": [
+        [0, 24, "nil"]
+      ]
+    }
+  }
+  
