@@ -8,6 +8,8 @@ if RUBY_ENGINE == "opal"
   require 'opal-jquery'
 else
   puts "Ruby engine is ruby"
+  Opal.append_path File.expand_path("..", FILE__).untaint
+  
   require_relative "httpget/version"
   # require_relative '../jquery-3.6.0.min.js'
   require "opal"
