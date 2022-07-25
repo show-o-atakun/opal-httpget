@@ -9,7 +9,7 @@ if RUBY_ENGINE == "opal"
 else
   puts "Ruby engine is ruby"
   Opal.append_path File.expand_path("..", __FILE__).untaint
-  Opal.append_path File.expand_path(".", __FILE__).untaint
+  Opal.append_path File.expand_path("../..", __FILE__).untaint
   
   require_relative "httpget/version"
   # require_relative '../jquery-3.6.0.min.js'
