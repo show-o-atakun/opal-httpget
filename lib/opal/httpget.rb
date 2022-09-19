@@ -77,16 +77,19 @@ module Opal
       yield
     end
 
+
+    # おまけ機能: テキストの変更
+    def change_text(id, text)
+      `document.querySelector(id).textContent=text;`
+    end
+
+    # おまけ機能: テキストの変更
+    def open_window(url)
+      `window.open( url );`
+    end
+    
   end
 
-  # おまけ機能: テキストの変更
-  def change_text(id, text)
-    `document.querySelector(id).textContent=text;`
-  end
 
-  # おまけ機能: テキストの変更
-  def open_window(url)
-    `window.open( url );`
-  end
 
 end
