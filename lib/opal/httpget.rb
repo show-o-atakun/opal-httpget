@@ -62,19 +62,28 @@ module Opal
     module_function
 
     ##  画像プリロードの構文。参考: https://www.webdesignleaves.com/wp/jquery/1355/
-    def mypreload(files)
-      %x{
-        for(var i = 0; i< files.length; i++){
-            $("<img>").attr("src", files[i]);
-        }
-      }
-    end
+
+    # def mypreload(files)
+    #   %x{
+    #     for(var i = 0; i< files.length; i++){
+    #         $("<img>").attr("src", files[i]);
+    #     }
+    #   }
+    # end
 
     ##  ここで、先に画像ファイルを読み込む。
     def preload_images(files, &next_proc)
       imnum, targetnum = 0, files.length
-      mypreload(files)
-      yield
+      # mypreload(files)
+      %x{
+        for(var i = 0; i< files.length; i++){
+            $("<img>").attr("src", files[i]);
+            
+            if (i == files.length-1) {
+              #{ yield }
+            }
+        }
+      }
     end
 
 
@@ -87,9 +96,7 @@ module Opal
     def open_window(url)
       `window.open( url );`
     end
-    
+
   end
-
-
 
 end
